@@ -11,21 +11,27 @@ layout: default
                 <div class="spotlight">
                     <div class="content">
                         <header class="major">
-                            <h2>Who we are ?</h2>
+                            <h2>About</h2>
                         </header>
-                        <p>We are a bunch of overly optimistic, hardworking students working towards creating I.I.T. Kanpur's first Autonomous Under Water Vehicle. The current team consists of 20 students spanning various branches of engineering like Mechanical, Electrical, Computer Science, Physics, Material Science and Chemical at Indian Institute of Technology Kanpur.<br>Our mission is to participate in AUV competitions like NIOT SAVe, Robosub. The competition is a platform for students to display their skills in underwater robotics and build a connection with industries working along similar verticals. <br>Our vision is to lower the entry barier for research in underwater robotics. For this we have designed <i>Varun</i> such that any of its mechanical, electrical or software component can be individually improved and tested. Thus enabling researchers to focus on there field of research and using other pre-baked components.</p>
+                        <p>I'm a PhD student in cognitive psychology at Stanford University. I am also doing a PhD minor in Computer Science. My primary advisor is Prof. James McClelland. I'm also collaborating with the Stanford NLP group and Prof. Bruce McCandliss in the School of Education.
+
+                        During the summer of 2017, I join Microsoft Research at Cambridge as an intern. I work closely with Nate Kushman in The Machine Intelligence and Perception (MIP) group and Alex Taylor in the Human Experience and Design (HXD) group on dialog modeling.
+
+                        My PhD research focuses on how children (and adults) learn mathematics through perceptual and embodied experience. I'm also curious about the interaction between natural language comprehension and mathematical cognition. To these ends, I build dialog agents that learn mathematics through interaction with simulated physical world and human(or machine) teachers.</p>
                     </div>
-                    <span class="image"><img src="images/vehicles/varun.jpg" alt="varun" /></span>
+                    <span class="image"><img src="images/vehicles/ay_headshot.jpg" alt="varun" /></span>
                 </div>
             </section>
             <section id="subteams" class="main special">
                 <header class="major">
-                    <h2>Sub Teams</h2>
+                    <h2>Education</h2>
                 </header>
                 <ul class="features">
                     {% for item in site.subteam %}
                     <li>
-                        <span class="icon major {{ item.iconstyle }} {{ item.icon }}"></span>
+                        <!-- <span class="icon major {{ item.iconstyle }} {{ item.icon }}"></span> -->
+                        <span class="image {% cycle 'top' %}"><img src="{{ item.image }}" alt="" /></span>
+                        <!-- <span class="image"><img src="images/vehicles/ay_headshot.jpg" alt="varun" /></span> -->
                         <h3>{{ item.title }}</h3>
                         <p>{{ item.description }}</p>
                     </li>
