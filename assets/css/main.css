@@ -3532,3 +3532,15 @@ body.is-loading #header.alt .logo {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+/* unvisited link */
+a:link {
+    color: blue;
+    font-weight: 600;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+    font-weight: 600
+}
