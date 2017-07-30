@@ -3535,12 +3535,20 @@ body.is-loading #header.alt .logo {
 
 /* unvisited link */
 a:link {
-    color: blue;
-    font-weight: 600;
+    color: CornflowerBlue;
+    font-weight: normal;
+    font-style: initial;
 }
 
 /* visited link */
 a:visited {
     color: purple;
-    font-weight: 600
+    font-weight: normal
+    font-style: initial;
+}
+
+a:hover {
+    color: purple;
+    font-weight: normal
+    font-style: initial;
 }
