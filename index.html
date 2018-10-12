@@ -3,7 +3,7 @@ layout: default
 <!-- title: Arianna Yuan -->
 <!-- use-site-title: true -->
 ---
-
+        
 
         <!-- Header -->
         <header id="header" class="alt">
@@ -49,10 +49,29 @@ layout: default
                     {% endfor %}
                 </ul>
             </section>
-            <section id="third" class="main special">
+
+            <!-- When Introducing a new section, you need to add the section tag to the collections in _config.yml -->
+
+            <section id="third_wide" class="main special">
                 <header class="major">
                     <h2>Research Projects</h2>
                 </header>
+                    {% for item in site.competition_wide %}
+                    <p style="clear: both;">
+                    <span class="image {% cycle 'top', %}"><img src="{{ item.image }}" alt="" /></span>
+                    <h3> {{ item.title }} </h3>
+                    {{ item.description }}
+                    <!-- <a href="{{ item.link }}"><i>Read more...</i></a> -->
+                    </p>
+                    <br>
+                    {% endfor %}
+            </section>
+
+
+            <section id="third" class="main special">
+                <!-- <header class="major">
+                    <h2>Research Projects</h2>
+                </header> -->
                     {% for item in site.competition %}
                     <p style="clear: both;">
                     <span class="image {% cycle 'left', 'right' %}"><img src="{{ item.image }}" alt="" /></span>
@@ -76,7 +95,9 @@ layout: default
                     <br>
                     {% endfor %} -->
                     <p align="left">
-                    <span style="font-weight:bold">Arianna Yuan</span>, Will Monroe, Yu Bai and Nate Kushman (2018). Understanding the Rational Speech Act Model. To appear in the Proceedings of the 40th Annual Meeting of the Cognitive Science Society.  <a href="https://github.com/AriannaYuan/ariannayuan.github.io/raw/master/pdf/cogsci2018_final.pdf"><i>[PDF]</i></a> <br />
+                    <span style="font-weight:bold">Arianna Yuan</span>, Will Monroe, Yu Bai and Nate Kushman (2018). Understanding the Rational Speech Act Model. In Proceedings of the 40th Annual Meeting of the Cognitive Science Society.  <a href="https://github.com/AriannaYuan/ariannayuan.github.io/raw/master/pdf/cogsci2018_final.pdf"><i>[PDF]</i></a> <br />
+
+                    Shengjia Zhao, Hongyu Ren, <span style="font-weight:bold">Arianna Yuan</span>, Jiaming Song, Noah Goodman, Stefano Ermon (2018). Bias and Generalization in Deep Generative Models: An Empirical Study. In Proceedings of the Thirty-Second Annual Conference on Neural Information Processing Systems (NIPS 2018). <br />
 
                     <span style="font-weight:bold">Arianna Yuan</span> (2017). “So what should I do next?” – Learning to Reason through Self-Talk (in prep).  <a href="https://github.com/AriannaYuan/ariannayuan.github.io/raw/master/pdf/reasoning_through_self_talk.pdf"><i>[PDF]</i></a> <br />
 
@@ -92,7 +113,7 @@ layout: default
 
                     <span style="font-weight:bold">Arianna Yuan</span> and Jay, McClelland. The Representation of Negative Numbers (in prep). <br /> 
 
-                    Sun,Y., and <span style="font-weight:bold">Arianna Yuan</span>. Applications of Emotion Models Based on HMM in Mental Health Forecast. Journal of Tianjin University (Social Sciences), 13(6): 531-536, 2011. <br /> 
+                    Sun, Y., and <span style="font-weight:bold">Arianna Yuan</span>. Applications of Emotion Models Based on HMM in Mental Health Forecast. Journal of Tianjin University (Social Sciences), 13(6): 531-536, 2011. <br /> 
                     </p>
             </section>
         </div>
