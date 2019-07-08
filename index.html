@@ -51,37 +51,6 @@ layout: default
             </section>
 
             <!-- When Introducing a new section, you need to add the section tag to the collections in _config.yml -->
-
-            <section id="third_wide" class="main special">
-                <header class="major">
-                    <h2>Research Projects</h2>
-                </header>
-                    {% for item in site.competition_wide %}
-                    <p style="clear: both;">
-                    <span class="image {% cycle 'top', %}"><img style='height: 100%; width: 100%; object-fit: contain' src="{{ item.image }}" alt="" /></span>
-                    <h3> {{ item.title }} </h3>
-                    {{ item.description }}
-                    <!-- <a href="{{ item.link }}"><i>Read more...</i></a> -->
-                    </p>
-                    <br>
-                    {% endfor %}
-            </section>
-
-
-            <section id="third" class="main special">
-                <!-- <header class="major">
-                    <h2>Research Projects</h2>
-                </header> -->
-                    {% for item in site.competition %}
-                    <p style="clear: both;">
-                    <span class="image {% cycle 'left', 'right' %}"><img src="{{ item.image }}" alt="" /></span>
-                    <h3> {{ item.title }} </h3>
-                    {{ item.description }}
-                    <a href="{{ item.link }}"><i>Read more...</i></a>
-                    </p>
-                    <br>
-                    {% endfor %}
-            </section>
             <section id="fourth" class="main special">
                 <header class="major">
                     <h2>Publications and Presentations</h2>
@@ -116,4 +85,36 @@ layout: default
                     Sun, Y., and <span style="font-weight:bold">Arianna Yuan</span>. Applications of Emotion Models Based on HMM in Mental Health Forecast. Journal of Tianjin University (Social Sciences), 13(6): 531-536, 2011. <br /> 
                     </p>
             </section>
+            
+            <section id="third_wide" class="main special">
+                <header class="major">
+                    <h2>Research Projects</h2>
+                </header>
+                    {% for item in site.competition_wide %}
+                    <p style="clear: both;">
+                    <span class="image {% cycle 'top', %}"><img style='height: 100%; width: 100%; object-fit: contain' src="{{ item.image }}" alt="" /></span>
+                    <h3> {{ item.title }} </h3>
+                    {{ item.description }}
+                    <!-- <a href="{{ item.link }}"><i>Read more...</i></a> -->
+                    </p>
+                    <br>
+                    {% endfor %}
+            </section>
+
+
+            <section id="third" class="main special">
+                <!-- <header class="major">
+                    <h2>Research Projects</h2>
+                </header> -->
+                    {% for item in site.competition %}
+                    <p style="clear: both;">
+                    <span class="image {% cycle 'left', 'right' %}"><img src="{{ item.image }}" alt="" /></span>
+                    <h3> {{ item.title }} </h3>
+                    {{ item.description }}
+                    <a href="{{ item.link }}"><i>Read more...</i></a>
+                    </p>
+                    <br>
+                    {% endfor %}
+            </section>
+            
         </div>
