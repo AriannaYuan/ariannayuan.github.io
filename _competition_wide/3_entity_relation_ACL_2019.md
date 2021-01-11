@@ -1,0 +1,6 @@
+---
+title: Entity-Relation Extraction as Multi-turn Question Answering (ACL2019)
+image: /images/competitions/entity_relation_ACL.png
+description: In this paper, we propose a new paradigm for the task of entity-relation extraction. We cast the task as a multi-turn question answering problem, i.e., the extraction of entities and relations is transformed to the task of identifying answer spans from the context. This multi-turn QA formalization comes with several key advantages. Firstly, the question query encodes important information for the entity/relation class we want to identify; secondly, QA provides a natural way of jointly modeling entity and relation; and thirdly, it allows us to exploit the well developed machine reading comprehension  (MRC) models. Experiments on the ACE and the CoNLL04 corpora demonstrate that the proposed paradigm significantly outperforms previous best models. Additionally, we construct and will release a newly developed dataset RESUME, which requires multi-step reasoning to construct entity dependencies, as opposed to the single-step dependency extraction in the triplet exaction in previous datasets. The proposed multi-turn QA model also achieves the best performance on the RESUME dataset.
+link : https://www.aclweb.org/anthology/P19-1129.pdf
+---
